@@ -1,3 +1,7 @@
+/*
+ Demo hiển thị font tiếng Việt, Nhật, Trung trên màn TFT sử dụng thư viện Adafruit_ST7735
+ Các bạn SaveAs file code mẫu này ra chỗ khác để nạp code không bị lỗi font
+*/
 #include <Adafruit_GFX.h>    // Core graphics library
 #include <Adafruit_ST7735.h> // Hardware-specific library for ST7735
 #include <Adafruit_ST7789.h> // Hardware-specific library for ST7789
@@ -13,7 +17,7 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
 void setpx(int16_t x,int16_t y,uint16_t color)
 {
-  tft.drawPixel(x,y,color);
+  tft.drawPixel(x,y,color); //Thay đổi hàm này thành hàm vẽ pixel mà thư viện led bạn dùng cung cấp
 }
 MakeFont myfont(&setpx);
 
