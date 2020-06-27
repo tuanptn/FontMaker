@@ -10,7 +10,7 @@ MakeFont::MakeFont(set_px_typedef set_px)
 {
 	FontMaker_setpx = set_px;
 }
-void MakeFont::set_font(uint8_t *f_name,uint16_t *f_map)
+void MakeFont::set_font(const uint8_t *f_name,const uint16_t *f_map)
 {
    _f_name = f_name;
    _f_map = f_map;
