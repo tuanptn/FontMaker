@@ -18,7 +18,7 @@ class MakeFont
    	unsigned char putChar(int16_t x,int16_t y,uint16_t txt,uint16_t color,uint16_t backcolor);
    	void print(int16_t x,int16_t y,unsigned char *s,uint16_t color,uint16_t backcolor);
    	void print(int16_t x,int16_t y,char *s,uint16_t color,uint16_t backcolor);
-    void set_font(uint8_t *f_name,uint16_t *f_map);
+    void set_font(const uint8_t *f_name,const uint16_t *f_map);
    	MakeFont(set_px_typedef set_px);
    	private:
     set_px_typedef FontMaker_setpx;
