@@ -36,3 +36,5 @@ Thay đổi hàm tft.drawPixel thành hàm vẽ 1 điểm ảnh mà thư viện 
  
  myfont.print(0,0,"Xin chào các bạn !",RED);
 
+# Tạo font mới bằng phần mềm VN_make_Font
+Vào đường dẫn \Documents\Arduino\libraries\FontMaker-master để mở phần mềm VN_make_Font, bộ font sau khi tạo sẽ tự động được add vào thư viện Fontmaker.h
