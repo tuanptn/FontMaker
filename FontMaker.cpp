@@ -62,4 +62,16 @@ void MakeFont::print(int16_t x,int16_t y,char *s,uint16_t color,uint16_t backcol
       s+=offset;
    }
 }
+void MakeFont::print(int16_t x,int16_t y,String str,uint16_t color,uint16_t backcolor)
+{
+   unsigned char offset=0;
+   uint16_t utf8_addr;
+   unsigned char *s = &str[0];
+   while(*s)
+   {
+      utf8_addr=UTF8_GetAddr((unsigned char *)s,&offset);
+      x +=putChar(x,y,utf8_addr,color,backcolor)+1;
+      s+=offset;
+   }
+}
 //----------------------------------------------END FILE--------------------------------------------------//
