@@ -1,4 +1,0 @@
-MakeFont	KEYWORD1
-set_font	KEYWORD1
-
-
