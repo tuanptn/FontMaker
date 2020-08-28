@@ -16,9 +16,13 @@ class MakeFont
     public:     
    	unsigned char read(int16_t x, int16_t y,  uint16_t txt);
    	unsigned char putChar(int16_t x,int16_t y,uint16_t txt,uint16_t color,uint16_t backcolor);
+    unsigned char putChar_noBackColor(int16_t x,int16_t y,uint16_t txt,uint16_t color);
    	void print(int16_t x,int16_t y,unsigned char *s,uint16_t color,uint16_t backcolor);
    	void print(int16_t x,int16_t y,char *s,uint16_t color,uint16_t backcolor);
     void print(int16_t x,int16_t y,String str,uint16_t color,uint16_t backcolor);
+    void print_noBackColor(int16_t x,int16_t y,unsigned char *s,uint16_t color);
+    void print_noBackColor(int16_t x,int16_t y,char *s,uint16_t color);
+    void print_noBackColor(int16_t x,int16_t y,String str,uint16_t color);
     void set_font(const MyFont_typedef myfont);
    	MakeFont(set_px_typedef set_px);
    	private:
