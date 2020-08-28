@@ -16,11 +16,11 @@ Thay đổi hàm tft.drawPixel thành hàm vẽ 1 điểm ảnh mà thư viện 
 
 # Sử dụng
 Có 3 hàm cơ bản:
-set_font
-print
-print_noBackColor
+ set_font
+ print
+ print_noBackColor
 Ví dụ:
-myfont.set_font(MakeFont_Font1);
-myfont.print(0,0,"Xin chào các bạn !",RED,BLACK);
-myfont.print(0,0,"Xin chào các bạn !",RED);
+ myfont.set_font(MakeFont_Font1);
+ myfont.print(0,0,"Xin chào các bạn !",RED,BLACK);
+ myfont.print(0,0,"Xin chào các bạn !",RED);
 
