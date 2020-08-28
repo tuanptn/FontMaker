@@ -14,18 +14,21 @@ void setpx(int16_t x,int16_t y,uint16_t color)
    tft.drawPixel(x,y,color); //Thay đổi hàm này thành hàm vẽ pixel mà thư viện led bạn dùng cung cấp cho bạn
    
 }
+
 MakeFont myfont(&setpx);
 
 Thay đổi hàm tft.drawPixel thành hàm vẽ 1 điểm ảnh mà thư viện màn hình bạn sử dụng cung cấp cho. Thông thường chúng có tên là drawPixel
 
 # Sử dụng
-Có 3 hàm cơ bản:
+ Có 3 hàm cơ bản:
+
  set_font
 
  print
  
  print_noBackColor
-Ví dụ:
+ 
+ Ví dụ:
  
  myfont.set_font(MakeFont_Font1);
  
