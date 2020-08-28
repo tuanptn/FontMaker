@@ -23,3 +23,4 @@ Ví dụ:
 myfont.set_font(MakeFont_Font1);
 myfont.print(0,0,"Xin chào các bạn !",RED,BLACK);
 myfont.print(0,0,"Xin chào các bạn !",RED);
+
